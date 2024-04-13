@@ -33,7 +33,7 @@ namespace LMS.Infrastructure.Repositories.Base
 
         public async ValueTask<TEntity> DeleteAsync(TEntity entity)
         {
-            var entry = _context.Set<TEntity>().Update(entity);
+            var entry = _context.Set<TEntity>().Remove(entity);
             await _context.SaveChangesAsync();
 
             return entry.Entity;
