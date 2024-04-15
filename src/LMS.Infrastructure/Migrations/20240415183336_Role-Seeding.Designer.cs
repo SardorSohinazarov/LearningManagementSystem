@@ -4,6 +4,7 @@ using LMS.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LMS.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240415183336_Role-Seeding")]
+    partial class RoleSeeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,41 +76,41 @@ namespace LMS.Infrastructure.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6285),
+                            CreatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8547),
                             EndAt = new DateOnly(2024, 4, 15),
                             FilialId = 1L,
-                            LessonEndAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6305)),
-                            LessonStartAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6297)),
+                            LessonEndAt = new TimeOnly(23, 33, 35, 481).Add(TimeSpan.FromTicks(8563)),
+                            LessonStartAt = new TimeOnly(23, 33, 35, 481).Add(TimeSpan.FromTicks(8557)),
                             Name = ".Net bootcamp",
                             SpecialityId = 1L,
                             StartAt = new DateOnly(2024, 4, 15),
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6286)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8547)
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6309),
+                            CreatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8567),
                             EndAt = new DateOnly(2024, 4, 15),
                             FilialId = 1L,
-                            LessonEndAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6313)),
-                            LessonStartAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6312)),
+                            LessonEndAt = new TimeOnly(23, 33, 35, 481).Add(TimeSpan.FromTicks(8569)),
+                            LessonStartAt = new TimeOnly(23, 33, 35, 481).Add(TimeSpan.FromTicks(8569)),
                             Name = ".Net bootcamp 1",
                             SpecialityId = 1L,
                             StartAt = new DateOnly(2024, 4, 15),
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6310)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8567)
                         },
                         new
                         {
                             Id = 3L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6316),
+                            CreatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8585),
                             EndAt = new DateOnly(2024, 4, 15),
                             FilialId = 1L,
-                            LessonEndAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6320)),
-                            LessonStartAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6319)),
+                            LessonEndAt = new TimeOnly(23, 33, 35, 481).Add(TimeSpan.FromTicks(8589)),
+                            LessonStartAt = new TimeOnly(23, 33, 35, 481).Add(TimeSpan.FromTicks(8588)),
                             Name = ".Net bootcamp 2",
                             SpecialityId = 1L,
                             StartAt = new DateOnly(2024, 4, 15),
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6317)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8586)
                         });
                 });
 
@@ -137,30 +140,30 @@ namespace LMS.Infrastructure.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5798),
+                            CreatedAt = new DateTime(2024, 4, 15, 18, 33, 35, 481, DateTimeKind.Utc).AddTicks(8328),
                             Name = "Chilonzor",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5798)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8329)
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5801),
+                            CreatedAt = new DateTime(2024, 4, 15, 18, 33, 35, 481, DateTimeKind.Utc).AddTicks(8332),
                             Name = "Chimboy",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5801)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8332)
                         },
                         new
                         {
                             Id = 3L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5803),
+                            CreatedAt = new DateTime(2024, 4, 15, 18, 33, 35, 481, DateTimeKind.Utc).AddTicks(8334),
                             Name = "Farg'ona",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5803)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8334)
                         },
                         new
                         {
                             Id = 4L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5805),
+                            CreatedAt = new DateTime(2024, 4, 15, 18, 33, 35, 481, DateTimeKind.Utc).AddTicks(8336),
                             Name = "Xorazmiy",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5805)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8336)
                         });
                 });
 
@@ -341,23 +344,23 @@ namespace LMS.Infrastructure.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6455),
+                            CreatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8704),
                             Name = "Asistent",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6456)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8705)
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6458),
+                            CreatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8707),
                             Name = "Teacher",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6459)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8707)
                         },
                         new
                         {
                             Id = 3L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6461),
+                            CreatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8709),
                             Name = "Admin",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6462)
+                            UpdatedAt = new DateTime(2024, 4, 15, 23, 33, 35, 481, DateTimeKind.Local).AddTicks(8709)
                         });
                 });
 
@@ -413,8 +416,7 @@ namespace LMS.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId")
-                        .IsUnique();
+                    b.HasIndex("UserId");
 
                     b.ToTable("Teachers");
                 });
@@ -580,8 +582,8 @@ namespace LMS.Infrastructure.Migrations
             modelBuilder.Entity("LMS.Domain.Entities.Teacher", b =>
                 {
                     b.HasOne("LMS.Domain.Entities.User", "User")
-                        .WithOne("Teacher")
-                        .HasForeignKey("LMS.Domain.Entities.Teacher", "UserId")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -617,11 +619,6 @@ namespace LMS.Infrastructure.Migrations
             modelBuilder.Entity("LMS.Domain.Entities.Speciality", b =>
                 {
                     b.Navigation("Courses");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.User", b =>
-                {
-                    b.Navigation("Teacher");
                 });
 #pragma warning restore 612, 618
         }

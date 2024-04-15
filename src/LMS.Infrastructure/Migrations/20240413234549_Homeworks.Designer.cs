@@ -4,6 +4,7 @@ using LMS.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LMS.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240413234549_Homeworks")]
+    partial class Homeworks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,41 +76,41 @@ namespace LMS.Infrastructure.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6285),
-                            EndAt = new DateOnly(2024, 4, 15),
+                            CreatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1629),
+                            EndAt = new DateOnly(2024, 4, 14),
                             FilialId = 1L,
-                            LessonEndAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6305)),
-                            LessonStartAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6297)),
+                            LessonEndAt = new TimeOnly(4, 45, 48, 793).Add(TimeSpan.FromTicks(1667)),
+                            LessonStartAt = new TimeOnly(4, 45, 48, 793).Add(TimeSpan.FromTicks(1655)),
                             Name = ".Net bootcamp",
                             SpecialityId = 1L,
-                            StartAt = new DateOnly(2024, 4, 15),
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6286)
+                            StartAt = new DateOnly(2024, 4, 14),
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1630)
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6309),
-                            EndAt = new DateOnly(2024, 4, 15),
+                            CreatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1671),
+                            EndAt = new DateOnly(2024, 4, 14),
                             FilialId = 1L,
-                            LessonEndAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6313)),
-                            LessonStartAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6312)),
+                            LessonEndAt = new TimeOnly(4, 45, 48, 793).Add(TimeSpan.FromTicks(1675)),
+                            LessonStartAt = new TimeOnly(4, 45, 48, 793).Add(TimeSpan.FromTicks(1674)),
                             Name = ".Net bootcamp 1",
                             SpecialityId = 1L,
-                            StartAt = new DateOnly(2024, 4, 15),
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6310)
+                            StartAt = new DateOnly(2024, 4, 14),
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1672)
                         },
                         new
                         {
                             Id = 3L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6316),
-                            EndAt = new DateOnly(2024, 4, 15),
+                            CreatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1677),
+                            EndAt = new DateOnly(2024, 4, 14),
                             FilialId = 1L,
-                            LessonEndAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6320)),
-                            LessonStartAt = new TimeOnly(23, 49, 1, 711).Add(TimeSpan.FromTicks(6319)),
+                            LessonEndAt = new TimeOnly(4, 45, 48, 793).Add(TimeSpan.FromTicks(1680)),
+                            LessonStartAt = new TimeOnly(4, 45, 48, 793).Add(TimeSpan.FromTicks(1679)),
                             Name = ".Net bootcamp 2",
                             SpecialityId = 1L,
-                            StartAt = new DateOnly(2024, 4, 15),
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6317)
+                            StartAt = new DateOnly(2024, 4, 14),
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1677)
                         });
                 });
 
@@ -137,30 +140,30 @@ namespace LMS.Infrastructure.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5798),
+                            CreatedAt = new DateTime(2024, 4, 13, 23, 45, 48, 793, DateTimeKind.Utc).AddTicks(1245),
                             Name = "Chilonzor",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5798)
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1256)
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5801),
+                            CreatedAt = new DateTime(2024, 4, 13, 23, 45, 48, 793, DateTimeKind.Utc).AddTicks(1284),
                             Name = "Chimboy",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5801)
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1284)
                         },
                         new
                         {
                             Id = 3L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5803),
+                            CreatedAt = new DateTime(2024, 4, 13, 23, 45, 48, 793, DateTimeKind.Utc).AddTicks(1285),
                             Name = "Farg'ona",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5803)
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1286)
                         },
                         new
                         {
                             Id = 4L,
-                            CreatedAt = new DateTime(2024, 4, 15, 18, 49, 1, 711, DateTimeKind.Utc).AddTicks(5805),
+                            CreatedAt = new DateTime(2024, 4, 13, 23, 45, 48, 793, DateTimeKind.Utc).AddTicks(1287),
                             Name = "Xorazmiy",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(5805)
+                            UpdatedAt = new DateTime(2024, 4, 14, 4, 45, 48, 793, DateTimeKind.Local).AddTicks(1287)
                         });
                 });
 
@@ -226,62 +229,7 @@ namespace LMS.Infrastructure.Migrations
 
                     b.HasIndex("HomeworkId");
 
-                    b.ToTable("HomeworkFiles");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.HomeworkStudent", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("HomeworkId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("StudentId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("HomeworkId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("HomeworkStudents");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.HomeworkStudentFile", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long>("HomeworkStudentId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("Path")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("HomeworkStudentId");
-
-                    b.ToTable("HomeworkStudentFiles");
+                    b.ToTable("HomeworkFile");
                 });
 
             modelBuilder.Entity("LMS.Domain.Entities.Lesson", b =>
@@ -336,29 +284,6 @@ namespace LMS.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6455),
-                            Name = "Asistent",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6456)
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6458),
-                            Name = "Teacher",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6459)
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            CreatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6461),
-                            Name = "Admin",
-                            UpdatedAt = new DateTime(2024, 4, 15, 23, 49, 1, 711, DateTimeKind.Local).AddTicks(6462)
-                        });
                 });
 
             modelBuilder.Entity("LMS.Domain.Entities.Speciality", b =>
@@ -382,43 +307,6 @@ namespace LMS.Infrastructure.Migrations
                     b.ToTable("Specializations");
                 });
 
-            modelBuilder.Entity("LMS.Domain.Entities.Student", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("UserId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Students");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.Teacher", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("UserId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId")
-                        .IsUnique();
-
-                    b.ToTable("Teachers");
-                });
-
             modelBuilder.Entity("LMS.Domain.Entities.User", b =>
                 {
                     b.Property<long>("Id")
@@ -427,7 +315,7 @@ namespace LMS.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<DateTime?>("BirthDate")
+                    b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CreatedAt")
@@ -460,6 +348,7 @@ namespace LMS.Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfilePhotoPath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RefreshToken")
@@ -480,8 +369,6 @@ namespace LMS.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -525,36 +412,6 @@ namespace LMS.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("LMS.Domain.Entities.HomeworkStudent", b =>
-                {
-                    b.HasOne("LMS.Domain.Entities.Homework", "Homework")
-                        .WithMany()
-                        .HasForeignKey("HomeworkId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("LMS.Domain.Entities.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Homework");
-
-                    b.Navigation("Student");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.HomeworkStudentFile", b =>
-                {
-                    b.HasOne("LMS.Domain.Entities.HomeworkStudent", "HomeworkStudent")
-                        .WithMany("HomeworkStudentFiles")
-                        .HasForeignKey("HomeworkStudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("HomeworkStudent");
-                });
-
             modelBuilder.Entity("LMS.Domain.Entities.Lesson", b =>
                 {
                     b.HasOne("LMS.Domain.Entities.Course", "Course")
@@ -564,39 +421,6 @@ namespace LMS.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Course");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.Student", b =>
-                {
-                    b.HasOne("LMS.Domain.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.Teacher", b =>
-                {
-                    b.HasOne("LMS.Domain.Entities.User", "User")
-                        .WithOne("Teacher")
-                        .HasForeignKey("LMS.Domain.Entities.Teacher", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.User", b =>
-                {
-                    b.HasOne("LMS.Domain.Entities.Role", "Role")
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("LMS.Domain.Entities.Course", b =>
@@ -609,19 +433,9 @@ namespace LMS.Infrastructure.Migrations
                     b.Navigation("HomeworkFiles");
                 });
 
-            modelBuilder.Entity("LMS.Domain.Entities.HomeworkStudent", b =>
-                {
-                    b.Navigation("HomeworkStudentFiles");
-                });
-
             modelBuilder.Entity("LMS.Domain.Entities.Speciality", b =>
                 {
                     b.Navigation("Courses");
-                });
-
-            modelBuilder.Entity("LMS.Domain.Entities.User", b =>
-                {
-                    b.Navigation("Teacher");
                 });
 #pragma warning restore 612, 618
         }
