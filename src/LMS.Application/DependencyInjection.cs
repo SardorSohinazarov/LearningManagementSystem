@@ -1,5 +1,8 @@
 ﻿using LMS.Application.Services.CourseServices;
-using LMS.Application.Services.SpecialityServices;
+using LMS.Application.Services.HomeworkServices;
+using LMS.Application.Services.LessonServices;
+using LMS.Application.Services.TeacherServices;
+using LMS.Application.Services.UserServices;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LMS.Application
@@ -10,6 +13,10 @@ namespace LMS.Application
         {
             services.AddScoped<ICourseService, CourseSevice>();
             services.AddScoped<ISpecialityService, SpecialityService>();
+            services.AddScoped<IHomeworkService, HomeworkService>();
+            services.AddScoped<ITeacherService, TeacherService>();
+            services.AddScoped<ILessonService, LessonService>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }
