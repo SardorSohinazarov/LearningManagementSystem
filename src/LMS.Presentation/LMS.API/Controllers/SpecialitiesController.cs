@@ -1,5 +1,5 @@
 ﻿using LMS.Application.DataTransferObjects.Specialities;
-using LMS.Application.Services.SpecialityServices;
+using LMS.Application.Services.LessonServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LMS.API.Controllers
@@ -23,7 +23,7 @@ namespace LMS.API.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
-            => Ok(_specialityService.GetAllSpecialitiesAsync().ToList());
+            => Ok(_specialityService.GetAllSpecialitiesAsync());
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(long id, SpecialityModificationDTO specialityModificationDTO)
