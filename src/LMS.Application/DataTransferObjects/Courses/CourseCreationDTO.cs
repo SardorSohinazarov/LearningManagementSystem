@@ -8,5 +8,6 @@
         public TimeOnly LessonEndAt { get; set; }
         public DateOnly StartAt { get; set; } // Course boshlanadiga sana
         public DateOnly EndAt { get; set; }
+        public long FilialId { get; set; }
     }
 }
