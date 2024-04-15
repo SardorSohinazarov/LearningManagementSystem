@@ -10,8 +10,10 @@ namespace LMS.Domain.Entities
         public TimeOnly LessonEndAt { get; set; }
         public DateOnly StartAt { get; set; }
         public DateOnly EndAt { get; set; }
+        public long FilialId { get; set; }
 
         public virtual Speciality Speciality { get; set; }
         public virtual List<Lesson> Lessons { get; set; }
+        public virtual Filial Filial { get; set; }
     }
 }
