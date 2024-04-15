@@ -1,7 +1,7 @@
 ﻿using LMS.Application.DataTransferObjects.Specialities;
 using LMS.Domain.Entities;
 
-namespace LMS.Application.Services.SpecialityServices
+namespace LMS.Application.Services.LessonServices
 {
     public interface ISpecialityService
     {

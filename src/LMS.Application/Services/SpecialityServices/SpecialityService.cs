@@ -3,7 +3,7 @@ using LMS.Application.DataTransferObjects.Specialities;
 using LMS.Domain.Entities;
 using Mapster;
 
-namespace LMS.Application.Services.SpecialityServices
+namespace LMS.Application.Services.LessonServices
 {
     public class SpecialityService : ISpecialityService
     {
